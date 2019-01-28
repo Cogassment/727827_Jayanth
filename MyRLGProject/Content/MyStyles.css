@@ -1,0 +1,36 @@
+﻿
+.tablerow:nth-child(odd) {
+    background-color: lightgoldenrodyellow;
+}
+
+.tablerow:nth-child(even) {
+    background-color: white;
+}
+
+th {
+    background-color: #6d3583;
+    color: white;
+}
+
+.loader {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba( 255, 255, 255, .2 ) url('../../Images/loadingimg.gif') 50% 50% no-repeat;
+}
+
+#FileBrowse {
+    top: 5px;
+    width: 35%;
+    margin: 0px auto;
+    background-color: #6d3583;
+}
+
+#Files {
+    color: white;
+    overflow: no-display;
+}
