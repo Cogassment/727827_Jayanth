@@ -1,0 +1,46 @@
+﻿
+1/28/2019 12:48:21 PM
+
+File uploaded
+
+Exception: Invalid file signature.
+/******************************************************/
+
+1/28/2019 12:53:21 PM
+
+File uploaded
+
+Exception: Invalid file signature.
+/******************************************************/
+
+1/28/2019 1:01:07 PM
+
+File uploaded
+
+Exception: Invalid file signature.
+/******************************************************/
+
+1/28/2019 1:02:31 PM
+
+File uploaded
+
+File Deleted 
+
+Result returned
+ /******************************************************/ 
+
+1/28/2019 1:05:16 PM
+
+File uploaded
+
+Exception: Invalid file signature.
+/******************************************************/
+
+1/28/2019 1:05:30 PM
+
+File uploaded
+
+File Deleted 
+
+Result returned
+ /******************************************************/ 
