@@ -1,4 +1,5 @@
-﻿using System.IO;
+using System;
+using System.IO;
 
 namespace MyRLGProject.Helper
 {
@@ -6,8 +7,10 @@ namespace MyRLGProject.Helper
     {
         public void Log(string log)
         {
-            string filePath = System.Web.Hosting.HostingEnvironment.MapPath("~")+"Logs\\log.txt"; ;
-            File.AppendAllText(filePath, log+"\n");            
+            DateTime date = DateTime.Now;
+            string fileName = "Logs\\"+"Log_" + date.Day + date.Month + date.Year+".txt";
+            string filePath = System.Web.Hosting.HostingEnvironment.MapPath("~")+ fileName; 
+            File.AppendAllText(filePath, log+"\n");
         }
     }
 }
