@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -118,26 +118,36 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Deleted" xml:space="preserve">
-    <value>File Deleted 
+    <value>
+File Deleted 
 </value>
   </data>
   <data name="FileError" xml:space="preserve">
-    <value>File error 
- /******************************************************/ </value>
+    <value>
+File error 
+ /******************************************************/ 
+</value>
   </data>
   <data name="NotExcelFile" xml:space="preserve">
-    <value>Not an excel file or damaged file 
- /******************************************************/ </value>
+    <value>
+Not an excel file or damaged file 
+ /******************************************************/ 
+</value>
   </data>
   <data name="Returned" xml:space="preserve">
-    <value>Result returned
- /******************************************************/ </value>
+    <value>
+Result returned
+ /******************************************************/ 
+</value>
   </data>
   <data name="Separator" xml:space="preserve">
-    <value>/******************************************************/</value>
+    <value>
+ /******************************************************/ 
+</value>
   </data>
   <data name="Uploaded" xml:space="preserve">
-    <value>File uploaded
+    <value>
+File uploaded
 </value>
   </data>
 </root>
