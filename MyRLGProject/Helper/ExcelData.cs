@@ -1,4 +1,4 @@
-﻿using ExcelDataReader;
+using ExcelDataReader;
 using Newtonsoft.Json;
 using System;
 using System.Data;
@@ -10,11 +10,12 @@ namespace MyRLGProject.Helper
     public class ExcelData : IExcelData
     {
         private Logger log = new Logger();
-
+        private const string newFormat = ".xlsx";
+        private const string oldFormat = ".xls";
         public string Convert(HttpPostedFileBase UploadFile)
         {
-            string JsonString = string.Empty;
-            log.Log("\n" + DateTime.UtcNow.ToString() + "\n");
+            string JsonString = "false";
+            log.Log(DateTime.UtcNow.ToString());
             if (UploadFile.ContentLength > 0)
             {
                 try
@@ -22,7 +23,7 @@ namespace MyRLGProject.Helper
                     string temppath = Path.GetTempPath();
                     var fileName = Path.GetFileName(UploadFile.FileName);
                     string FilePath = Path.Combine(temppath, fileName);
-                    if (FilePath.EndsWith(".xlsx") || FilePath.EndsWith(".xls"))
+                    if (FilePath.EndsWith(newFormat) || FilePath.EndsWith(oldFormat))
                     {
                         UploadFile.SaveAs(FilePath); //storing uploaded file temporarily in client temporary directory
                         log.Log(LogMessage.Uploaded);
@@ -30,13 +31,14 @@ namespace MyRLGProject.Helper
                         FileStream stream = System.IO.File.Open(FilePath, FileMode.Open, FileAccess.Read);
                         IExcelDataReader excelReader = null;
 
-                        if (FilePath.EndsWith(".xls"))
+                        if (FilePath.EndsWith(oldFormat))
                             excelReader = ExcelReaderFactory.CreateBinaryReader(stream);
-                        if (FilePath.EndsWith(".xlsx"))
+                        if (FilePath.EndsWith(newFormat))
                             excelReader = ExcelReaderFactory.CreateOpenXmlReader(stream);
 
                         DataSet result = excelReader.AsDataSet();
                         excelReader.Close();
+                        
                         DeleteFile(FilePath);
 
                         JsonString = JsonConvert.SerializeObject(result.Tables[0]);
@@ -46,21 +48,18 @@ namespace MyRLGProject.Helper
                     else
                     {
                         log.Log(LogMessage.NotExcelFile);
-                        JsonString = "false";
                         return JsonString;
                     }
                 }
                 catch (Exception e)
                 {
-                    log.Log("Exception: " + e.Message + "\n" + LogMessage.Separator);
-                    JsonString = "false";
+                    log.Log("Exception: " + e.Message +LogMessage.Separator);
                     return JsonString;
                 }
             }
             else
             {
                 log.Log(LogMessage.FileError);
-                JsonString = "false";
                 return JsonString;
             }
         }
