@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[YesOrNo] (
+    [Id]    INT          NOT NULL,
+    [YesNo] VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+INSERT INTO [dbo].[YesOrNo] ([Id], [YesNo]) VALUES (0, N'No')
+INSERT INTO [dbo].[YesOrNo] ([Id], [YesNo]) VALUES (1, N'Yes')

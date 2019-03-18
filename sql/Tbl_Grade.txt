@@ -1,0 +1,29 @@
+CREATE TABLE [dbo].[Tbl_Grade] (
+    [Id]              INT          IDENTITY (1, 1) NOT NULL,
+    [Cognizant_Grade] VARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (0, N'Analyst - Operational Exc')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (1, N'Architect - Technology')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (2, N'Assoc. Director - Projects')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (3, N'Assoc. Director - Projects')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (4, N'Associate')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (5, N'Associate - Projects')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (6, N'Business Analyst')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (7, N'Client Partner')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (8, N'Consultant')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (9, N'Manager - Consulting')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (10, N'Manager - Projects')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (11, N'PAT')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (12, N'Principal Consultant-OSP Cloud')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (13, N'Product Specialist - Testing')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (14, N'Programmer Analyst')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (15, N'Senior Associate')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (16, N'Senior Consultant')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (17, N'Sr.Architect - Technology')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (18, N'Sr.Associate - Projects')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (19, N'Sr.Coordinator')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (20, N'Sr.Manager - Projects')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (21, N'Sr.Prod Specialist - Testing')
+INSERT INTO [dbo].[Tbl_Grade] ([Id], [Cognizant_Grade]) VALUES (22, N'Technology Specialist')

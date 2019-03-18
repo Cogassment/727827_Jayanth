@@ -1,0 +1,17 @@
+CREATE TABLE [dbo].[Tbl_EsaPrj] (
+    [Id]           INT           IDENTITY (1, 1) NOT NULL,
+    [ESA_Prj_Name] VARCHAR (100) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+INSERT INTO [dbo].[Tbl_EsaPrj] ([Id], [ESA_Prj_Name]) VALUES (0, N'N/A')
+INSERT INTO [dbo].[Tbl_EsaPrj] ([Id], [ESA_Prj_Name]) VALUES (1, N'RLG Agency Platform Delivery')
+INSERT INTO [dbo].[Tbl_EsaPrj] ([Id], [ESA_Prj_Name]) VALUES (2, N'RLG Business Analysts')
+INSERT INTO [dbo].[Tbl_EsaPrj] ([Id], [ESA_Prj_Name]) VALUES (3, N'RLG Common Reporting Standard')
+INSERT INTO [dbo].[Tbl_EsaPrj] ([Id], [ESA_Prj_Name]) VALUES (4, N'RLG D2C Development')
+INSERT INTO [dbo].[Tbl_EsaPrj] ([Id], [ESA_Prj_Name]) VALUES (5, N'RLG DCGrowth Development')
+INSERT INTO [dbo].[Tbl_EsaPrj] ([Id], [ESA_Prj_Name]) VALUES (6, N'RLG Env Support Staff Aug')
+INSERT INTO [dbo].[Tbl_EsaPrj] ([Id], [ESA_Prj_Name]) VALUES (7, N'RLG Extranet Development')
+INSERT INTO [dbo].[Tbl_EsaPrj] ([Id], [ESA_Prj_Name]) VALUES (8, N'RLG PMO')
+INSERT INTO [dbo].[Tbl_EsaPrj] ([Id], [ESA_Prj_Name]) VALUES (9, N'RLG Testing Services')
+INSERT INTO [dbo].[Tbl_EsaPrj] ([Id], [ESA_Prj_Name]) VALUES (10, N'RLG Think Beyond Staff Aug')
